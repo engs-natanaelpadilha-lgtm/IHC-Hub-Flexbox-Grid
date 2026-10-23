@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao CSS Grid</title>
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    <header class="topo">
+        <h1>Introdução ao CSS Grid</h1>
+        <p>Aprenda a organizar elementos em linhas e colunas</p>
+    </header>
+
+    <main class="conteudo">
+        <a href="index.html" class="voltar">← Voltar ao Hub</a>
+
+        <section class="bloco">
+            <h2>O que é CSS Grid?</h2>
+            <p>
+                CSS Grid é um sistema de layout bidimensional que
+                permite organizar elementos em linhas e colunas.
+                Ele facilita a criação de páginas estruturadas,
+                galerias de imagens e grades de cartões.
+            </p>
+        </section>
+
+        <section class="bloco">
+            <h2>Principais propriedades</h2>
+            <ul>
+                <li><strong>display: grid:</strong> ativa o Grid.</li>
+                <li><strong>grid-template-columns:</strong> define as colunas.</li>
+                <li><strong>grid-template-rows:</strong> define as linhas.</li>
+                <li><strong>gap:</strong> define o espaço entre os elementos.</li>
+                <li><strong>grid-column:</strong> define as colunas ocupadas por um item.</li>
+                <li><strong>grid-row:</strong> define as linhas ocupadas por um item.</li>
+            </ul>
+        </section>
+
+        <section class="bloco">
+            <h2>Exemplo prático</h2>
+            <p>Veja uma grade organizada em três colunas:</p>
+
+            <div class="exemplo-grid">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+                <div class="item">Item 5</div>
+                <div class="item">Item 6</div>
+            </div>
+
+            <pre><code>.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}</code></pre>
+        </section>
+
+        <section class="bloco">
+            <h2>Quando utilizar?</h2>
+            <p>
+                O Grid é indicado para galerias, painéis, páginas
+                com várias áreas de conteúdo e layouts que precisam
+                organizar elementos em linhas e colunas.
+            </p>
+        </section>
+
+        <a href="flexbox.html" class="proxima">← Aula anterior: Flexbox</a>
+    </main>
+</body>
+</html>
